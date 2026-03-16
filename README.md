@@ -1,4 +1,4 @@
-# -Laborat-rio-de-Ataque-Brute-Force-com-Kali-Linux-e-Medusa
+# Laboratório de Ataque Brute Force com Kali Linux e Medusa
 
 # 🔐 Laboratório de Ataque Brute Force com Kali Linux e Medusa
 ### 📌 Descrição
