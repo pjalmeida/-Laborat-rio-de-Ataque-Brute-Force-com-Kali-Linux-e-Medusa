@@ -20,3 +20,23 @@ Este projeto tem como objetivo:
 * Identificar vulnerabilidades relacionadas a autenticação fraca
 * Documentar processos técnicos de forma estruturada
 * Apresentar medidas de mitigação e boas práticas de segurança
+
+
+# 🧪 Ambiente de Laboratório
+
+O laboratório foi configurado utilizando virtualização através do software:
+* **Vmware Workstation Pro**
+
+Máquinas Virtuais Utilizadas
+| Máquina          | Função             |
+| ---------------- | ------------------ |
+| Kali Linux       | Máquina atacante   |
+| Metasploitable 2 | Máquina vulnerável |
+
+Topologia de Rede
+Kali Linux (Attacker)
+        │
+        │ Host-Only Network
+        │
+Metasploitable 2 (Target)
+Rede configurada como Host-Only, garantindo isolamento do ambiente externo.
