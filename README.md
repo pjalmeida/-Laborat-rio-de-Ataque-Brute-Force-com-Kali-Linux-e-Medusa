@@ -11,3 +11,12 @@ Durante os testes, foi utilizada a ferramenta de ataque de autenticação parale
 
 ### ⚠️ Aviso:
 Todos os testes foram realizados em ambiente isolado de laboratório, exclusivamente para fins educacionais e de estudo em segurança da informação.
+
+# 🎯 Objetivos do Projeto
+
+Este projeto tem como objetivo:
+* Demonstrar como funcionam ataques de força bruta em serviços de rede
+* Utilizar ferramentas de pentest em ambiente controlado
+* Identificar vulnerabilidades relacionadas a autenticação fraca
+* Documentar processos técnicos de forma estruturada
+* Apresentar medidas de mitigação e boas práticas de segurança
