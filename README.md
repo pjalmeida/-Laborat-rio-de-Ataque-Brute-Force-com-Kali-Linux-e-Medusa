@@ -144,12 +144,6 @@ Este projeto foi desenvolvido exclusivamente para fins educacionais em ambiente 
 
 A execução de testes de segurança deve ser realizada somente em ambientes autorizados.
 
-👨‍💻 Autor
-
-Paulo Joabe Silva Almeida
-
-Analista de Suporte | Infraestrutura de TI | Redes
-
 ## 👨‍💻 Autor
 Paulo Joabe Silva Almeida  
 Analista de Suporte | Infraestrutura de TI | Redes
