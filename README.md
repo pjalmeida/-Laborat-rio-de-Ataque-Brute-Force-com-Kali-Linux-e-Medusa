@@ -82,10 +82,77 @@ Caso a senha esteja presente na wordlist:
 
 Esse resultado demonstra como credenciais fracas podem ser facilmente comprometidas.
 
+# 🌐 Teste de Autenticação Web (DVWA)
 
+Para simulação de ataques contra aplicações web foi utilizado:
 
+**DVWA**
 
+Acesso à aplicação
+> http://192.168.56.101/dvwa
+Credenciais padrão:
+> user: admin
+password: password
 
+Esse ambiente permite testar vulnerabilidades relacionadas a:
+* autenticação fraca
+* brute force em formulários web
+* falhas de validação
+
+# 🖥️ Password Spraying em SMB
+
+Outro cenário testado foi o password spraying contra serviço SMB.
+
+Esse tipo de ataque consiste em testar uma senha comum contra múltiplos usuários, evitando bloqueios por excesso de tentativas.
+
+Enumeração de usuários
+
+Ferramenta utilizada:
+> enum4linux 192.168.56.101
+
+Ataque com Medusa
+> medusa -h 192.168.56.101 -U users.txt -p password -M smbnt
+Esse ataque demonstra como senhas comuns podem comprometer diversas contas simultaneamente.
+
+# 🛡️ Medidas de Mitigação
+
+Para prevenir ataques de força bruta em ambientes reais, recomenda-se:
+* Política de senhas fortes
+* mínimo de 12 caracteres
+* letras maiúsculas e minúsculas
+* números e caracteres especiais
+  
+Autenticação multifator (MFA)
+Adição de um segundo fator de autenticação.
+
+**Bloqueio de tentativas de login**
+
+Exemplo:
+> Bloqueio após 5 tentativas falhas
+
+**Monitoramento de logs**
+Ferramentas recomendadas:
+* Fail2Ban
+* Wazuh
+
+**Rate Limiting**
+Limitar número de tentativas de autenticação por IP.
+
+#⚠️ Aviso Legal
+
+Este projeto foi desenvolvido exclusivamente para fins educacionais em ambiente controlado de laboratório.
+
+A execução de testes de segurança deve ser realizada somente em ambientes autorizados.
+
+👨‍💻 Autor
+
+Paulo Joabe Silva Almeida
+
+Analista de Suporte | Infraestrutura de TI | Redes
+
+## 👨‍💻 Autor
+Paulo Joabe Silva Almeida  
+Analista de Suporte | Infraestrutura de TI | Redes
 
 
 
