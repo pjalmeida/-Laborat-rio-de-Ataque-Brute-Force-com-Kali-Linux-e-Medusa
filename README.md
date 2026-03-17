@@ -49,16 +49,14 @@ Antes da execução dos ataques, foi realizado reconhecimento da superfície de 
 
 **Nmap**  
 Comando utilizado
-> nmap -sV 192.168.56.101
+> nmap -sV 192.168.170.129
 
 Resultado esperado
 Identificação de serviços vulneráveis como:
-
 * FTP (21)
 * SSH (22)
 * HTTP (80)
 * SMB (445)
-  
 Esse processo é fundamental para identificar serviços que podem ser alvo de ataques de autenticação.
 
 # ⚔️ Ataque de Força Bruta em FTP
@@ -66,7 +64,7 @@ Esse processo é fundamental para identificar serviços que podem ser alvo de at
 O primeiro teste foi realizado contra o serviço FTP presente na máquina vulnerável.
 
 Comando utilizado
-> medusa -h 192.168.56.101 -u msfadmin -P wordlists/passwords.txt -M ftp
+> medusa -h 192.168.170.129 -U users.txt -P pass.txt -M ftp -t 6
 
 **Parâmetros utilizados**
 | Parâmetro | Função             |
@@ -74,7 +72,8 @@ Comando utilizado
 | -h        | Host alvo          |
 | -u        | Usuário            |
 | -P        | Wordlist de senhas |
-| -M        | Módulo do serviço  |  
+| -M        | Módulo do serviço  |
+| -t        | Número tentativas  |  
 
 Resultado esperado  
 Caso a senha esteja presente na wordlist:  
@@ -89,7 +88,7 @@ Para simulação de ataques contra aplicações web foi utilizado:
 **DVWA**
 
 Acesso à aplicação
-> http://192.168.56.101/dvwa
+> http://192.168.170.129/dvwa
 Credenciais padrão:
 > user: admin
 password: password
@@ -108,10 +107,10 @@ Esse tipo de ataque consiste em testar uma senha comum contra múltiplos usuári
 Enumeração de usuários
 
 Ferramenta utilizada:
-> enum4linux 192.168.56.101
+> enum4linux 192.168.170.129
 
 Ataque com Medusa
-> medusa -h 192.168.56.101 -U users.txt -p password -M smbnt
+>medusa -h 192.168.170.129 -U smb_users.txt -P senhas_spray.txt -M smbnt -t 2 -T 50
 Esse ataque demonstra como senhas comuns podem comprometer diversas contas simultaneamente.
 
 # 🛡️ Medidas de Mitigação
@@ -138,7 +137,7 @@ Ferramentas recomendadas:
 **Rate Limiting**
 Limitar número de tentativas de autenticação por IP.
 
-#⚠️ Aviso Legal
+## ⚠️ Aviso Legal
 
 Este projeto foi desenvolvido exclusivamente para fins educacionais em ambiente controlado de laboratório.
 
@@ -146,7 +145,9 @@ A execução de testes de segurança deve ser realizada somente em ambientes aut
 
 ## 👨‍💻 Autor
 Paulo Joabe Silva Almeida  
-Analista de Suporte | Infraestrutura de TI | Redes
+Analista de Suporte | Infraestrutura de TI | Redes  
+Tecnologo em 
+
 
 
 
