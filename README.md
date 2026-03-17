@@ -87,8 +87,9 @@ Para simulação de ataques contra aplicações web foi utilizado:
 
 **DVWA**
 
-Acesso à aplicação
+Acesso à aplicação  
 > http://192.168.170.129/dvwa
+
 Credenciais padrão:
 > user: admin
 password: password
@@ -146,7 +147,7 @@ A execução de testes de segurança deve ser realizada somente em ambientes aut
 ## 👨‍💻 Autor
 Paulo Joabe Silva Almeida  
 Analista de Suporte | Infraestrutura de TI | Redes  
-Tecnologo em 
+Tecnologo em Analise e Desenvolvimento de sistemas
 
 
 
