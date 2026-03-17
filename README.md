@@ -41,6 +41,10 @@ Kali Linux (Attacker)
         │
 Metasploitable 2 (Target)
 ```
+<div align="left">
+  <img src="https://github.com/pjalmeida/-Laborat-rio-de-Ataque-Brute-Force-com-Kali-Linux-e-Medusa/blob/main/images/host%20only%20kali.jpeg" width="300px" alt="Logo do Projeto">
+</div>
+
 Rede configurada como Host-Only, garantindo isolamento do ambiente externo.
 
 # 🔍 Reconhecimento de Serviços
