@@ -42,7 +42,10 @@ Kali Linux (Attacker)
 Metasploitable 2 (Target)
 ```
 <div align="left">
-  <img src="https://github.com/pjalmeida/-Laborat-rio-de-Ataque-Brute-Force-com-Kali-Linux-e-Medusa/blob/main/images/host%20only%20kali.jpeg" width="300px" alt="Logo do Projeto">
+ <img src="https://github.com/pjalmeida/-Laborat-rio-de-Ataque-Brute-Force-com-Kali-Linux-e-Medusa/blob/main/images/host%20only%20kali.jpeg" width="240px" alt="Logo do Projeto"> 
+ <img src="https://github.com/pjalmeida/-Laborat-rio-de-Ataque-Brute-Force-com-Kali-Linux-e-Medusa/blob/main/images/ip%20kali%20linux.jpeg" width="240px" alt="Logo do Projeto">
+ <img src="https://github.com/pjalmeida/-Laborat-rio-de-Ataque-Brute-Force-com-Kali-Linux-e-Medusa/blob/main/images/host%20only%20metaspoitable.jpeg" width="240px" alt="Logo do Projeto">
+ <img src="https://github.com/pjalmeida/-Laborat-rio-de-Ataque-Brute-Force-com-Kali-Linux-e-Medusa/blob/main/images/ip%20do%20%20metaspoitable2.jpeg" width="240px" alt="Logo do Projeto">
 </div>
 
 Rede configurada como Host-Only, garantindo isolamento do ambiente externo.
@@ -51,11 +54,16 @@ Rede configurada como Host-Only, garantindo isolamento do ambiente externo.
 
 Antes da execução dos ataques, foi realizado reconhecimento da superfície de ataque utilizando a ferramenta de varredura de rede:
 
-**Nmap**  
+**Nmap** 
+<div align="left">
+  <img src="https://github.com/pjalmeida/-Laborat-rio-de-Ataque-Brute-Force-com-Kali-Linux-e-Medusa/blob/main/images/Enumeração%20de%20Serviços.jpeg" width="300px" alt="Logo do Projeto">
+</div>
 Comando utilizado
+
 > nmap -sV 192.168.170.129
 
 Resultado esperado
+
 Identificação de serviços vulneráveis como:
 * FTP (21)
 * SSH (22)
